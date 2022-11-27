@@ -40,7 +40,7 @@ class InputDataViewModel(application: Application) : AndroidViewModel(applicatio
     }
 
     init {
-        daoDatabase = getInstance(application)?.appDatabase?.databaseDao()
+        daoDatabase = getInstance(application)?.appDatabase?.daoDatabase()
     }
 
 }
