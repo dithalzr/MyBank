@@ -42,13 +42,13 @@ class HistoryAdapter(
         holder.tvDate.setText(data.tanggal)
         holder.tvKategori.text = "Sampah " + data.jenisSampah
         holder.tvBerat.text = "Berat : " + data.berat.toString() + " Kg"
-        holder.tvSaldo.text = "Pendapatan : " + rupiahFormat(data.harga)
+        holder.tvSaldo.text = "Pendapatan : " + rupiahFormat(data.harga*data.berat)
 
         if (data.berat < 5) {
-            holder.tvStatus.setTextColor(ContextCompat.getColor(mContext, R.color.purple_200))
+            holder.tvStatus.setTextColor(ContextCompat.getColor(mContext, R.color.green))
             holder.tvStatus.text = "Masih dalam proses"
         } else {
-            holder.tvStatus.setTextColor(ContextCompat.getColor(mContext, R.color.teal_700))
+            holder.tvStatus.setTextColor(ContextCompat.getColor(mContext, R.color.yellow))
             holder.tvStatus.text = "Sudah di konfirmasi"
         }
     }

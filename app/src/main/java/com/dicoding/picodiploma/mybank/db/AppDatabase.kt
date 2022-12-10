@@ -6,5 +6,5 @@ import com.dicoding.picodiploma.mybank.model.ModelDatabase
 
 @Database(entities = [ModelDatabase::class], version = 1, exportSchema = false)
 abstract class AppDatabase : RoomDatabase() {
-    abstract fun databaseDao(): DaoDatabase?
+    abstract fun daoDatabase(): DaoDatabase?
 }

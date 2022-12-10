@@ -93,6 +93,7 @@ class InputDataActivity : AppCompatActivity() {
             override fun afterTextChanged(editable: Editable) {
                 inputBerat.removeTextChangedListener(this)
                 if (editable.length > 0) {
+                    countBerat = editable.toString().toInt()
                     setTotalPrice(countBerat)
                 } else {
                     inputHarga.setText(rupiahFormat(countHarga))
@@ -159,14 +160,14 @@ class InputDataActivity : AppCompatActivity() {
     }
 
     private fun setStatusBar() {
-        /*if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             window.decorView.systemUiVisibility =
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
         if (Build.VERSION.SDK_INT >= 21) {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false)
             window.statusBarColor = Color.TRANSPARENT
-        }*/
+        }
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

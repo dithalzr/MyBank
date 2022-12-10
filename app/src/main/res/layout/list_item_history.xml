@@ -91,6 +91,6 @@
         android:layout_gravity="end|bottom"
         android:layout_margin="15dp"
         android:src="@drawable/ic_baseline_delete_24"
-        app:tint="@color/teal_700" />
+        app:tint="@color/deep_green" />
 
 </androidx.cardview.widget.CardView>

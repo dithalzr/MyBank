@@ -12,9 +12,12 @@ import android.os.Bundle
 import android.view.View
 import android.view.WindowManager
 import androidx.core.app.ActivityCompat
+import com.dicoding.picodiploma.mybank.login.LoginActivity
 import com.dicoding.picodiploma.mybank.view.HistoryActivity
 import com.dicoding.picodiploma.mybank.view.InputDataActivity
 import com.dicoding.picodiploma.mybank.view.JenisSampahActivity
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import im.delight.android.location.SimpleLocation
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
@@ -32,6 +35,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        val user = Firebase.auth.currentUser
+        tvUsername.text = user?.email
 
         setPermission()
         setStatusBar()
@@ -67,6 +73,11 @@ class MainActivity : AppCompatActivity() {
 
         cvHistory.setOnClickListener { v: View? ->
             val intent = Intent(this@MainActivity, HistoryActivity::class.java)
+            startActivity(intent)
+        }
+        btnLogout.setOnClickListener { v: View? ->
+            Firebase.auth.signOut()
+            val intent = Intent(this@MainActivity, LoginActivity::class.java)
             startActivity(intent)
         }
     }
@@ -134,5 +145,4 @@ class MainActivity : AppCompatActivity() {
             window.attributes = layoutParams
         }
     }
-
 }

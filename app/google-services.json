@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1068317628797",
+    "project_id": "mybank-3ef77",
+    "storage_bucket": "mybank-3ef77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1068317628797:android:7dbbb119c6e341fa245414",
+        "android_client_info": {
+          "package_name": "com.dicoding.picodiploma.mybank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1068317628797-ppd1d1npnl5c25inttu8ggftt5arid50.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.dicoding.picodiploma.mybank",
+            "certificate_hash": "1b20afdc934cbc796b67dc673f6611047c05c02d"
+          }
+        },
+        {
+          "client_id": "1068317628797-onnp8hs9k7uq5jjj0hjgcsffargvbn8p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQ1J3r0x31RKjob9Eo7PtTsxklPjE8Ccs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1068317628797-onnp8hs9k7uq5jjj0hjgcsffargvbn8p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

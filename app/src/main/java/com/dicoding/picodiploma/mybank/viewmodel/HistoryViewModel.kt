@@ -26,9 +26,8 @@ class HistoryViewModel(application: Application) : AndroidViewModel(application)
     }
 
     init {
-        daoDatabase = getInstance(application)?.appDatabase?.databaseDao()
+        daoDatabase = getInstance(application)?.appDatabase?.daoDatabase()
         dataBank = daoDatabase!!.getAll()
         totalSaldo = daoDatabase!!.getSaldo()
     }
-
 }

@@ -1,18 +1,64 @@
 <resources>
     <string name="app_name">MyBank</string>
-    <string name="deskripsi_jenis">Sampah merupakan hasil produksi manusia yang tidak akan pernah luput dari kehidupan sehari-hari. Lalu, jenis-jenis sampah apa yang biasanya kita hasilkan? Yuk, kenali di sini.\n\nSampah jika dibiarkan saja akan mengganggu kebersihan lingkungan secara umum. Sampah dapat dibedakan menjadi dua macam, yaitu:</string>
-    <string name="anorganik"><b>1. Sampah Padat (Anorganik)</b>\n\nSampah anorganik adalah sampah yang terdiri atas bahan-bahan anorganik. Contoh bahan-bahan anorganik adalah bahan logam, plastik, kaca, karet, dan kaleng. Sifat sampah anorganik adalah tahan lama dan sukar membusuk.\n\nSampah ini tidak mudah diuraikan oleh mikroorganisme tanah. Apabila dibuang sembarangan, sampah anorganik dapat menimbulkan pencemaran tanah.</string>
-    <string name="organik"><b>2. Sampah Basah (Organik)</b>\n\nSampah organik adalah sampah yang terdiri atas bahan-bahan organik. Sifat sampah organik adalah tidak tahan lama dan cepat membusuk. Biasanya sampah jenis ini berasal dari makhluk hidup. Contohnya adalah sayur-sayuran, buah-buah yang membusuk, sisa nasi, daun, dan sebagainya.\n\nSampah organik mudah diuraikan mikroorganisme tanah. Hanya saja jenis sampah akan menimbulkan bau kurang sedap jika tidak dikelola dengan baik.</string>
     <string-array name="kategori_sampah">
-        <item>Plastik</item>
-        <item>Logam</item>
-        <item>Kertas</item>
-        <item>Karet</item>
+        <item>Botol Air Mineral</item>
+        <item>Botol Sabun / Sampo</item>
+        <item>Jerigen</item>
+        <item>Toples Makanan</item>
     </string-array>
     <string-array name="harga_perkilo">
-        <item>1500</item>
-        <item>3000</item>
-        <item>800</item>
-        <item>1000</item>
+        <item>5000</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>4000</item>
     </string-array>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="tittle_saldo_riwayat"><![CDATA[Saldo & Riwayat Anda]]></string>
+    <string name="txt_saldo_anda">Saldo Anda :</string>
+    <string name="txt_riwayat_kosong">Oops, riwayat masih kosong!</string>
+    <string name="txt_isi_data">Mohon isi data dibawah ini dengan benar</string>
+    <string name="txt_nama">Nama Pengguna</string>
+    <string name="hint_nama">Masukan nama lengkap</string>
+    <string name="txt_kategori_sampah">Kategori Sampah</string>
+    <string name="txt_berat">Berat (Kg)</string>
+    <string name="hint_berat">5 Kg</string>
+    <string name="txt_harga">Harga (per Kg)</string>
+    <string name="hint_harga">Rp.1500/Kg</string>
+    <string name="txt_tanggal_jemput">Tanggal Penjemputan</string>
+    <string name="hint_tanggal_jemput">Masukan tanggal</string>
+    <string name="txt_alamat">Alamat</string>
+    <string name="hint_alamat">Masukan alamat</string>
+    <string name="txt_catatan">Catatan Tambahan (Opsional)</string>
+    <string name="hint_catatan">Masukan catatan tambahan anda</string>
+    <string name="btn_jemput">Jemput Sekarang</string>
+    <string name="tittle_panduan">Panduan Pengiriman</string>
+    <string name="hint_email">Email</string>
+    <string name="tittle_login">Login</string>
+    <string name="hint_password">Password</string>
+    <string name="txt_forgot_password">Forgot password?</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="tittle_welcome">Selamat Datang</string>
+    <string name="txt_lokasi_user">Lokasi Anda</string>
+    <string name="txt_ajakan">Tukarkan sampah plastikmu sekarang!</string>
+    <string name="txt_pengertian">Aplikasi Bank Sampah adalah solusi untuk menyelesaikan masalah sosial tentang kebersihan lingkungan.</string>
+    <string name="menu_kategori">Menu Kategori</string>
+    <string name="tittle_register">Register</string>
+    <string name="btn_have_account">Already Have Account</string>
+    <string name="tittle_jemput_sampah">Jemput Sampah</string>
+    <string name="tittle_steps">1. Hal yang Perlu dilakukan Sebelum Pengiriman</string>
+    <string name="txt_steps"><b>1. Bersihkan</b>\n\t\tPastikan sampah botol plastik dalam kondisi yang\n\t\tbersih sebelum dikirimkan\n<b>2. Pisahkan</b>\n\t\tPisahkan botol plastik sesuai dengan jenisnya\n<b>3. Isi Formulir</b>\n\t\tSilahkan isi formulir pada menu jemput sampah\n<b>4. Penjemputan</b>\n\t\tTunggu kurir menjemput sampah ke rumah anda\n<b>5. Daur Ulang</b>\n\t\tSampah di daur ulang sesuai prosedur</string>
+    <string name="txt_jenis_sampah">1. Botol Air Mineral\n2. Botol Sabun / Sampo\n3. Jerigen\n4. Toples Makanan</string>
+    <string name="tittle_jenis_plastik">2. Jenis Plastik</string>
+    <string name="txt_username">Username</string>
+    <string name="btn_logout">LOG OUT</string>
+    <!-- TODO: Remove or change this placeholder text -->
 </resources>

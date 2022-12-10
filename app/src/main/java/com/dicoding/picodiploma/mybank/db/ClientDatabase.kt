@@ -9,7 +9,8 @@ class ClientDatabase private constructor(context: Context) {
 
     companion object {
         private var mInstance: ClientDatabase? = null
-
+        @JvmStatic
+        @Synchronized
         fun getInstance(context: Context): ClientDatabase? {
             if (mInstance == null) {
                 mInstance = ClientDatabase(context)

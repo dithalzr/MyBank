@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="10dp"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/green">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -30,13 +31,13 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/truk_sampah" />
+                    android:src="@drawable/truk" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Jemput Sampah"
+                    android:text="@string/tittle_jemput_sampah"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -44,7 +45,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="@color/teal_700" />
+                    android:background="@color/deep_green" />
 
             </LinearLayout>
 
@@ -68,13 +69,13 @@
                 <ImageView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:src="@drawable/kategori_sampah" />
+                    android:src="@drawable/botol" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Jenis Sampah"
+                    android:text="@string/tittle_panduan"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -82,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="@color/teal_700" />
+                    android:background="@color/deep_green" />
 
             </LinearLayout>
 
@@ -113,13 +114,13 @@
                 <ImageView
                     android:layout_width="64dp"
                     android:layout_height="64dp"
-                    android:src="@drawable/recycle" />
+                    android:src="@drawable/saldo" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
-                    android:text="Saldo &amp; Riwayat"
+                    android:text="@string/tittle_saldo_riwayat"
                     android:textColor="@color/black"
                     android:textStyle="bold" />
 
@@ -127,7 +128,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_margin="10dp"
-                    android:background="@color/teal_700" />
+                    android:background="@color/deep_green" />
 
             </LinearLayout>
 
@@ -135,4 +136,13 @@
 
     </LinearLayout>
 
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/btn_logout"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/deep_green"/>
 </LinearLayout>

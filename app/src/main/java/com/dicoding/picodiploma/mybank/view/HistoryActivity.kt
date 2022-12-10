@@ -30,6 +30,7 @@ class HistoryActivity : AppCompatActivity(), HistoryAdapter.HistoryAdapterCallba
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
+
         setStatusBar()
         setToolbar()
         setInitLayout()
@@ -79,14 +80,14 @@ class HistoryActivity : AppCompatActivity(), HistoryAdapter.HistoryAdapterCallba
     }
 
     private fun setStatusBar() {
-       /* if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+       if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
             window.decorView.systemUiVisibility =
                 View.SYSTEM_UI_FLAG_LAYOUT_STABLE or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
         }
         if (Build.VERSION.SDK_INT >= 21) {
             setWindowFlag(this, WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS, false)
             window.statusBarColor = Color.TRANSPARENT
-        }*/
+        }
     }
 
     override fun onDelete(modelDatabase: ModelDatabase?) {
@@ -104,7 +105,7 @@ class HistoryActivity : AppCompatActivity(), HistoryAdapter.HistoryAdapterCallba
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        if (item.itemId == androidx.appcompat.R.id.home) {
+        if (item.itemId == android.R.id.home) {
             finish()
             return true
         }

@@ -13,7 +13,7 @@ interface DaoDatabase {
     @Query("SELECT * FROM tbl_banksampah")
     fun getAll(): LiveData<List<ModelDatabase>>
 
-    @Query("SELECT SUM(harga) FROM tbl_banksampah")
+    @Query("SELECT SUM(harga*berat) FROM tbl_banksampah")
     fun getSaldo(): LiveData<Int>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

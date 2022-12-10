@@ -16,7 +16,8 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?actionBarSize"
-            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24">
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_new_24"
+            android:background="@color/deep_green">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -28,7 +29,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_centerInParent="true"
                     android:text="Jemput Sampah"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -41,7 +42,8 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:background="@color/green">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,7 +68,7 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="60dp"
-                        android:background="@color/teal_700"
+                        android:background="@color/yellow"
                         android:orientation="horizontal">
 
                         <ImageView
@@ -82,8 +84,9 @@
                             android:layout_gravity="center"
                             android:layout_marginStart="20dp"
                             android:layout_marginEnd="20dp"
-                            android:text="Mohon isi data dibawah ini dengan benar"
+                            android:text="@string/txt_isi_data"
                             android:textColor="@color/white"
+                            android:textStyle="bold"
                             android:textSize="18sp" />
 
                     </LinearLayout>
@@ -99,7 +102,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Nama Pengguna"
+                            android:text="@string/txt_nama"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -107,8 +110,8 @@
                             android:id="@+id/inputNama"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:backgroundTint="@color/teal_700"
-                            android:hint="Masukan nama lengkap"
+                            android:backgroundTint="@color/deep_green"
+                            android:hint="@string/hint_nama"
                             android:imeOptions="actionNext"
                             android:inputType="textPersonName"
                             android:maxLines="1"
@@ -134,7 +137,7 @@
                                 android:id="@+id/tvKategori"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Kategori Sampah"
+                                android:text="@string/txt_kategori_sampah"
                                 android:textColor="@color/black"
                                 android:textSize="14sp" />
 
@@ -145,6 +148,7 @@
                                 android:layout_below="@+id/tvKategori"
                                 android:layout_marginTop="10dp"
                                 android:background="@drawable/spinner_bg"
+                                android:backgroundTint="@color/deep_green"
                                 android:entries="@array/kategori_sampah"
                                 android:spinnerMode="dropdown" />
 
@@ -156,7 +160,8 @@
                                 android:layout_centerVertical="true"
                                 android:layout_gravity="center"
                                 android:layout_marginTop="20dp"
-                                android:src="@drawable/ic_baseline_arrow_drop_down_24" />
+                                android:src="@drawable/ic_baseline_arrow_drop_down_24"
+                                app:tint="@color/deep_green"/>
 
                         </RelativeLayout>
 
@@ -180,7 +185,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Berat (Kg)"
+                                android:text="@string/txt_berat"
                                 android:textColor="@color/black"
                                 android:textSize="14sp" />
 
@@ -188,8 +193,8 @@
                                 android:id="@+id/inputBerat"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:backgroundTint="@color/teal_700"
-                                android:hint="5 Kg"
+                                android:backgroundTint="@color/deep_green"
+                                android:hint="@string/hint_berat"
                                 android:imeOptions="actionNext"
                                 android:inputType="number"
                                 android:maxLines="1"
@@ -208,7 +213,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Harga (per Kg)"
+                                android:text="@string/txt_harga"
                                 android:textColor="@color/black"
                                 android:textSize="14sp" />
 
@@ -216,9 +221,9 @@
                                 android:id="@+id/inputHarga"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:backgroundTint="@color/teal_700"
+                                android:backgroundTint="@color/deep_green"
                                 android:focusableInTouchMode="false"
-                                android:hint="Rp.1500/Kg"
+                                android:hint="@string/hint_harga"
                                 android:maxLines="1"
                                 android:textColor="@color/black"
                                 android:textSize="16sp" />
@@ -243,7 +248,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Tanggal Penjemputan"
+                                android:text="@string/txt_tanggal_jemput"
                                 android:textColor="@color/black"
                                 android:textSize="14sp" />
 
@@ -251,9 +256,9 @@
                                 android:id="@+id/inputTanggal"
                                 android:layout_width="match_parent"
                                 android:layout_height="50dp"
-                                android:backgroundTint="@color/teal_700"
+                                android:backgroundTint="@color/deep_green"
                                 android:focusableInTouchMode="false"
-                                android:hint="Masukan tanggal"
+                                android:hint="@string/hint_tanggal_jemput"
                                 android:imeOptions="actionNext"
                                 android:inputType="date"
                                 android:maxLines="1"
@@ -276,7 +281,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Alamat"
+                            android:text="@string/txt_alamat"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -284,8 +289,8 @@
                             android:id="@+id/inputAlamat"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:backgroundTint="@color/teal_700"
-                            android:hint="Masukan alamat"
+                            android:backgroundTint="@color/deep_green"
+                            android:hint="@string/hint_alamat"
                             android:imeOptions="actionNext"
                             android:inputType="text"
                             android:minHeight="50dp"
@@ -307,7 +312,7 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Catatan Tambahan (Opsional)"
+                            android:text="@string/txt_catatan"
                             android:textColor="@color/black"
                             android:textSize="14sp" />
 
@@ -315,8 +320,8 @@
                             android:id="@+id/inputTambahan"
                             android:layout_width="match_parent"
                             android:layout_height="50dp"
-                            android:backgroundTint="@color/teal_700"
-                            android:hint="Masukan catatan tambahan anda"
+                            android:backgroundTint="@color/deep_green"
+                            android:hint="@string/hint_catatan"
                             android:imeOptions="actionDone"
                             android:inputType="text"
                             android:maxLines="1"
@@ -324,9 +329,7 @@
                             android:textSize="16sp" />
 
                     </LinearLayout>
-
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
 
             <com.google.android.material.button.MaterialButton
@@ -334,7 +337,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_margin="30dp"
-                android:text="Jemput Sekarang"
+                android:text="@string/btn_jemput"
                 android:textAllCaps="false"
                 android:textColor="@color/white"
                 android:textSize="16sp"
@@ -342,7 +345,7 @@
                 android:theme="@style/Theme.MaterialComponents"
                 app:backgroundTint="@color/teal_700"
                 app:cornerRadius="50dp"
-                app:elevation="5dp"
+                app:elevation="7dp"
                 app:rippleColor="@color/purple_700" />
 
         </LinearLayout>
