@@ -42,16 +42,18 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/fpacifico"
                     android:text="@string/tittle_welcome"
                     android:textColor="@color/white"
-                    android:textSize="16sp" />
+                    android:textSize="18sp" />
 
                 <TextView
                     android:id="@+id/tvUsername"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/fmedium"
                     android:textColor="@color/white"
-                    android:textSize="23sp"
+                    android:textSize="20sp"
                     android:textStyle="bold" />
 
             </LinearLayout>
@@ -85,6 +87,7 @@
                 android:marqueeRepeatLimit="marquee_forever"
                 android:singleLine="true"
                 android:text="@string/txt_lokasi_user"
+                android:fontFamily="@font/fmedium"
                 android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
@@ -117,6 +120,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/txt_ajakan"
+                        android:fontFamily="@font/fmedium"
                         android:textColor="@color/black"
                         android:layout_marginTop="8dp"
                         android:textSize="16sp"
@@ -128,6 +132,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_marginBottom="8dp"
                         android:text="@string/txt_pengertian"
+                        android:fontFamily="@font/fmedium"   
                         android:textColor="@color/black"
                         android:textSize="12sp" />
 
@@ -150,6 +155,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:text="@string/menu_kategori"
+            android:fontFamily="@font/fmedium"
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold" />
