@@ -1,5 +1,5 @@
 # Bank Sampah
-## _Capstone - Membuat Aplikasi Bank Sampah_
+## _Capstone Project - Membuat Aplikasi Bank Sampah_
 Aplikasi Bank Sampah Berbassis Android adalah suatu aplikasi yang menjadi salah satu solusi masalah sampah yang ada di masyarakat. 
 
 > Mempunyai nilai edukasi terhadap kepedulian dan lingkungan.
@@ -9,25 +9,20 @@ Aplikasi Bank Sampah Berbassis Android adalah suatu aplikasi yang menjadi salah 
 
 ## Features
 - Aplikasi Bank Sampah ini memiliki fitur jemput sampah yang terintegrasi dengan Google Maps dan memungkinkan pengepul langsung ke lokasi penjemputan limbah sampah.
-- Dapat melakukan transaksi langsung.
-- Terdapat Informasi / Edukasi Terkait Jenis-jenis sampah.
+- Terdapat Informasi panduan pengiriman beserta jenis sampahnya
+- Terdapat menu riwayat transaksi dan saldo pengguna
 
-
-# Framework
-
-Menggunakan Framework Android Studio
-
-# Programming Language
+## Programming Language
 Menggunakan Bahasa Kotlin
 
+## Database
+Firebase
 
 ## Source Code
 | Plugin | Link |
-| ------ | ------ |
-| GitHub |https://github.com/dithalzr/MyBank.git |
+| ------ | ---- |
+| GitHub |https://github.com/dithalzr/MyBank.git|
 
 ## Development
-
 Tim Capstone C22-061
-
 
